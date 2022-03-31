@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coin Toss Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="coin-toss text-center">
+        <h1 class="coin-toss__heading">First To 5 Points Wins!</h1>
+        <div class="score">
+          <p>Player: <span class="score__player">0</span></p>
+          <p>Computer: <span class="score__computer">0</span></p>
+        </div>
+        <div class="coin animate__animated animate__flip">
+          <div class="coin__heads">
+            <span class="coin__heads-text">Heads</span>
+          </div>
+          <div class="coin__tails transform-rotate-y">
+            <span class="coin__tails-text">Tails</span>
+          </div>
+        </div>
+        <div class="selected">
+          <p>Player Selected: <span class="selected__player">Heads</span></p>
+          <p>
+            Computer Selected: <span class="selected__computer">Tails</span>
+          </p>
+        </div>
+        <h2 class="coin-toss__selection-text">Make a selection</h2>
+        <div class="selection-btns">
+          <button class="btn btn--heads">Heads</button>
+          <button class="btn btn--tails">Tails</button>
+        </div>
+        <button class="btn btn--new-game">🔃 New Game</button>
+      </section>
+    </main>
+  </body>
+</html>

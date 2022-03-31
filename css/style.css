@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  background: linear-gradient(to bottom right, #c31432, #240b36);
+  min-height: 100vh;
+  color: #212427;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: min(100%, 1010px);
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+.coin-toss {
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.coin-toss__heading {
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: 0.07em;
+}
+
+.score {
+  margin-top: 2rem;
+}
+
+.score p {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+.score p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.coin {
+  position: relative;
+  background: linear-gradient(
+    140deg,
+    rgba(255, 222, 100, 1) 50%,
+    rgba(255, 215, 66, 1) 50%
+  );
+  border-radius: 100px;
+  width: 175px;
+  height: 175px;
+  padding: 1.3rem;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.coin__heads,
+.coin__tails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: linear-gradient(
+    140deg,
+    rgba(255, 172, 27, 1) 50%,
+    rgba(255, 166, 10, 1) 50%
+  );
+  border-radius: 100px;
+  width: 90%;
+  height: 90%;
+  box-shadow: -4px -4px 4px 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.transform-rotate-y {
+  transform: rotateY(180deg);
+}
+
+/* .coin__tails {
+  transform: rotateY(180deg);
+} */
+
+.coin__heads-text,
+.coin__tails-text {
+  font-size: clamp(3rem, 5vw, 3.6rem);
+  font-weight: 700;
+  color: #ffde64;
+  text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.selected p {
+  font-size: clamp(2rem, 5vw, 2.4rem);
+}
+
+.selected p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.selected__player,
+.selected__computer {
+  font-weight: 700;
+}
+
+.selected__player {
+  color: #2b8a3e;
+}
+
+.selected__computer {
+  color: #1864ab;
+}
+
+.coin-toss__selection-text {
+  font-size: clamp(2.2rem, 5vw, 2.4rem);
+  margin-top: 5rem;
+}
+
+.selection-btns {
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: inherit;
+  padding: 0.8rem 0rem;
+  width: 147px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.3s;
+}
+
+.btn--heads {
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--new-game {
+  width: 200px;
+}
