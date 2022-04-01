@@ -1,7 +1,5 @@
 'use strict';
 
-//  animate__animated animate__flip
-// transform-rotate-y
 const coinTossData = Object.freeze({
   participants: [
     { participant: 'player', score: 0, selectedCoinSide: '' },
