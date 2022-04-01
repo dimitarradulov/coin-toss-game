@@ -20,6 +20,10 @@ body {
   text-transform: uppercase;
 }
 
+.hidden {
+  display: none;
+}
+
 .text-center {
   text-align: center;
 }
