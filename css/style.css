@@ -39,7 +39,7 @@ body {
   place-items: center;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 1.75rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
