@@ -24,7 +24,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .text-center {
@@ -173,4 +173,22 @@ body {
 
 .btn--new-game {
   width: 200px;
+}
+
+@media screen and (min-width: 800px) {
+  .score,
+  .selected {
+    width: 70%;
+  }
+
+  .selected p:first-child,
+  .score p:first-child {
+    margin-bottom: 0;
+  }
+
+  .score__scores,
+  .selected {
+    display: flex;
+    justify-content: space-between;
+  }
 }
