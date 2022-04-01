@@ -12,6 +12,9 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   font-size: 2.4rem;
   background: linear-gradient(to bottom right, #c31432, #240b36);
