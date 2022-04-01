@@ -17,6 +17,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"
+    ></script>
     <script defer src="./js/script.js"></script>
   </head>
   <body>
@@ -27,24 +31,26 @@
           <p>Player: <span class="score__player">0</span></p>
           <p>Computer: <span class="score__computer">0</span></p>
         </div>
-        <div class="coin animate__animated animate__flip">
-          <div class="coin__heads">
+        <div class="coin">
+          <div class="coin-side coin__heads">
             <span class="coin__heads-text">Heads</span>
           </div>
-          <div class="coin__tails transform-rotate-y">
+          <div class="coin-side coin__tails transform-rotate-y">
             <span class="coin__tails-text">Tails</span>
           </div>
         </div>
         <div class="selected">
-          <p>Player Selected: <span class="selected__player">Heads</span></p>
-          <p>
-            Computer Selected: <span class="selected__computer">Tails</span>
-          </p>
+          <p>Player Selected: <span class="selected__player"></span></p>
+          <p>Computer Selected: <span class="selected__computer"></span></p>
         </div>
         <h2 class="coin-toss__selection-text">Make a selection</h2>
         <div class="selection-btns">
-          <button class="btn btn--heads">Heads</button>
-          <button class="btn btn--tails">Tails</button>
+          <button class="btn selection-btns__btn" data-selected="heads">
+            Heads
+          </button>
+          <button class="btn selection-btns__btn" data-selected="tails">
+            Tails
+          </button>
         </div>
         <button class="btn btn--new-game">🔃 New Game</button>
       </section>
