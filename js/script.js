@@ -166,7 +166,7 @@ const storePreviousData = function () {
   };
 };
 
-const newData = storePreviousData();
+let newData = storePreviousData();
 
 const showWinnerOrDraw = (message) => {
   const scores = document.querySelector('.score__scores');
@@ -231,6 +231,10 @@ const newGameBtnHandler = function () {
     scores.classList.remove('hidden');
     winnerTextContainer.classList.add('hidden');
   }
+
+  newData = storePreviousData();
+
+  addEventListenersToSideButtons(coinSideButtonHandler);
 };
 
 addEventListenersToSideButtons(coinSideButtonHandler);
